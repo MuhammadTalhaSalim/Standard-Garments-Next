@@ -1,3 +1,5 @@
 {
+  "/PoloAndTShirts/page": "app/PoloAndTShirts/page.js",
+  "/WinterWear/page": "app/WinterWear/page.js",
   "/page": "app/page.js"
 }

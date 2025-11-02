@@ -1,17 +1,34 @@
-
 "use client";
 
 import React from "react";
 import Link from "next/link";
-import School from "../assets/School.jpeg";
+import { useRouter, usePathname } from "next/navigation";
+import School from "../assets/school.jpeg";
 
 function EducationUniforms() {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const handleLinkClick = (e, sectionId) => {
     e.preventDefault();
     
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // Check if we're already on the home page
+    if (pathname === '/') {
+      // If on home page, just scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If on another page, navigate to home first, then scroll
+      router.push('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 300);
     }
   };
 

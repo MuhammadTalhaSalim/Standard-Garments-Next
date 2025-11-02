@@ -1,16 +1,30 @@
-
 "use client";
 
 import React from "react";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation"; // ✅ added imports
 
 function NewArrivals() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // ✅ Handles smooth scroll or redirects to home then scrolls
   const handleLinkClick = (e, sectionId) => {
     e.preventDefault();
-    
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+
+    if (pathname === "/") {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      router.push("/");
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
     }
   };
 
@@ -18,138 +32,156 @@ function NewArrivals() {
     {
       id: 1,
       title: "Advanced Medical Scrubs Pro",
-      description: "Our latest innovation in medical wear featuring next-generation antimicrobial fabric technology and ergonomic design. These premium scrubs offer superior comfort and protection for healthcare professionals, representing the future of medical uniforms.",
+      description:
+        "Our latest innovation in medical wear featuring next-generation antimicrobial fabric technology and ergonomic design. These premium scrubs offer superior comfort and protection for healthcare professionals, representing the future of medical uniforms.",
       features: [
         "Advanced antimicrobial fabric technology",
         "Ergonomic comfort-fit design",
         "4-way stretch performance material",
         "Moisture-wicking quick-dry properties",
         "Fade-resistant color technology",
-        "Enhanced pocket functionality"
+        "Enhanced pocket functionality",
       ],
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1000&q=80",
-      badge: "Just Launched"
+      image:
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=1000&q=80",
+      badge: "Just Launched",
     },
     {
       id: 2,
       title: "Executive Chef Collection 2024",
-      description: "Introducing our premium chef uniform line designed in collaboration with renowned culinary professionals. This collection combines traditional culinary elegance with cutting-edge fabric innovation for the modern kitchen professional.",
+      description:
+        "Introducing our premium chef uniform line designed in collaboration with renowned culinary professionals. This collection combines traditional culinary elegance with cutting-edge fabric innovation for the modern kitchen professional.",
       features: [
         "Premium double-breasted styling",
         "Heat-resistant advanced materials",
         "Stain-release coating technology",
         "Breathable mesh ventilation panels",
         "Professional embroidery options",
-        "Sustainable fabric construction"
+        "Sustainable fabric construction",
       ],
-      image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80",
-      badge: "Limited Edition"
+      image:
+        "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80",
+      badge: "Limited Edition",
     },
     {
       id: 3,
       title: "Smart Security Uniforms",
-      description: "Revolutionary security uniforms featuring integrated technology pockets and tactical design elements. These uniforms are crafted for modern security professionals who require functionality, durability, and professional appearance.",
+      description:
+        "Revolutionary security uniforms featuring integrated technology pockets and tactical design elements. These uniforms are crafted for modern security professionals who require functionality, durability, and professional appearance.",
       features: [
         "Tactical design elements",
         "Integrated technology pockets",
         "Reinforced durability construction",
         "Weather-resistant fabric treatment",
         "Professional authority styling",
-        "Customizable badge placement"
+        "Customizable badge placement",
       ],
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80",
-      badge: "New Technology"
+      image:
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80",
+      badge: "New Technology",
     },
     {
       id: 4,
       title: "Luxury Hotel Collection",
-      description: "Elegant hospitality uniforms designed for luxury hotels and high-end establishments. This collection emphasizes sophistication and comfort, creating memorable impressions while ensuring staff comfort throughout demanding service periods.",
+      description:
+        "Elegant hospitality uniforms designed for luxury hotels and high-end establishments. This collection emphasizes sophistication and comfort, creating memorable impressions while ensuring staff comfort throughout demanding service periods.",
       features: [
         "Luxury fabric blend materials",
         "Sophisticated tailored styling",
         "Wrinkle-resistant technology",
         "Brand customization options",
         "Comfort-fit design features",
-        "Premium finishing details"
+        "Premium finishing details",
       ],
-      image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=80",
-      badge: "Premium Line"
+      image:
+        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=80",
+      badge: "Premium Line",
     },
     {
       id: 5,
       title: "Eco-Friendly Workwear Series",
-      description: "Sustainable workwear made from recycled materials and eco-friendly manufacturing processes. This environmentally conscious collection delivers professional quality while supporting your organization's sustainability commitments.",
+      description:
+        "Sustainable workwear made from recycled materials and eco-friendly manufacturing processes. This environmentally conscious collection delivers professional quality while supporting your organization's sustainability commitments.",
       features: [
         "100% recycled material construction",
         "Carbon-neutral manufacturing process",
         "Biodegradable packaging options",
         "Sustainable dyeing techniques",
         "Professional durability standards",
-        "Environmental certification included"
+        "Environmental certification included",
       ],
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
-      badge: "Eco-Friendly"
+      image:
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      badge: "Eco-Friendly",
     },
     {
       id: 6,
       title: "Athletic Performance Uniforms",
-      description: "High-performance athletic uniforms utilizing the latest sports fabric technology. Designed for professional teams and athletic organizations requiring superior moisture management and durability during intense physical activity.",
+      description:
+        "High-performance athletic uniforms utilizing the latest sports fabric technology. Designed for professional teams and athletic organizations requiring superior moisture management and durability during intense physical activity.",
       features: [
         "Professional athletic fabric technology",
         "Superior moisture-wicking performance",
         "Anti-odor treatment integration",
         "Flexible movement design",
         "Team customization options",
-        "Competition-grade durability"
+        "Competition-grade durability",
       ],
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1000&q=80",
-      badge: "Performance"
+      image:
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1000&q=80",
+      badge: "Performance",
     },
     {
       id: 7,
       title: "Modern Barista Collection",
-      description: "Contemporary barista uniforms designed for the modern coffee culture. These uniforms blend casual comfort with professional presentation, perfect for specialty coffee shops and artisan beverage establishments.",
+      description:
+        "Contemporary barista uniforms designed for the modern coffee culture. These uniforms blend casual comfort with professional presentation, perfect for specialty coffee shops and artisan beverage establishments.",
       features: [
         "Contemporary casual styling",
         "Coffee-resistant fabric treatment",
         "Comfortable all-day wear design",
         "Brand customization friendly",
         "Easy-care maintenance",
-        "Trendy color palette options"
+        "Trendy color palette options",
       ],
-      image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80",
-      badge: "Trending"
+      image:
+        "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1000&q=80",
+      badge: "Trending",
     },
     {
       id: 8,
       title: "Tech-Integrated Service Wear",
-      description: "Innovative service uniforms featuring integrated technology solutions for modern hospitality. These uniforms include built-in communication device pockets and smart fabric features for the digital age service industry.",
+      description:
+        "Innovative service uniforms featuring integrated technology solutions for modern hospitality. These uniforms include built-in communication device pockets and smart fabric features for the digital age service industry.",
       features: [
         "Integrated communication pockets",
         "Smart fabric technology features",
         "Professional service styling",
         "Technology-friendly design",
         "Comfortable extended wear",
-        "Future-ready functionality"
+        "Future-ready functionality",
       ],
-      image: "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=1000&q=80",
-      badge: "Innovation"
-    }
+      image:
+        "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=1000&q=80",
+      badge: "Innovation",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Banner Section */}
-      <section 
+      <section
         className="relative min-h-screen flex items-center justify-center"
         style={{
-          background: 'linear-gradient(to bottom right, #2a314b, #1f2538, #1a1f2e)'
+          background:
+            "linear-gradient(to bottom right, #2a314b, #1f2538, #1a1f2e)",
         }}
       >
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=2070&q=80)'
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=2070&q=80)",
           }}
         ></div>
 
@@ -161,13 +193,17 @@ function NewArrivals() {
             </h1>
             <div className="h-0.5 bg-white w-24 ml-4"></div>
           </div>
-          
+
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
             Latest Innovations in Professional Uniforms
           </h2>
-          
+
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-4xl mx-auto">
-            Discover our newest collection of professional uniforms featuring cutting-edge fabrics, innovative designs, and advanced functionality. At Standard Garments, we continuously evolve our offerings to bring you the latest in uniform technology, comfort, and style for the modern workplace.
+            Discover our newest collection of professional uniforms featuring
+            cutting-edge fabrics, innovative designs, and advanced functionality.
+            At Standard Garments, we continuously evolve our offerings to bring
+            you the latest in uniform technology, comfort, and style for the
+            modern workplace.
           </p>
         </div>
       </section>
@@ -176,24 +212,23 @@ function NewArrivals() {
       {newArrivals.map((product, index) => (
         <section key={product.id} className="py-16 px-5 md:px-16 relative">
           <div className="max-w-7xl mx-auto">
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-              index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-            }`}>
-              {/* Image */}
-              <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} relative`}>
+            <div
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
+              }`}
+            >
+              <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""} relative`}>
                 <img
                   src={product.image}
                   alt={product.title}
                   className="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
-                {/* Badge */}
                 <div className="absolute top-4 left-4 bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                   {product.badge}
                 </div>
               </div>
 
-              {/* Content */}
-              <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
+              <div className={`${index % 2 === 1 ? "lg:col-start-1" : ""}`}>
                 <div className="flex items-center mb-4">
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                     {product.title}
@@ -202,16 +237,21 @@ function NewArrivals() {
                     NEW
                   </div>
                 </div>
-                
+
                 <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                   {product.description}
                 </p>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-gray-800">Key Features:</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    Key Features:
+                  </h3>
                   <ul className="space-y-3">
                     {product.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start space-x-3">
+                      <li
+                        key={featureIndex}
+                        className="flex items-start space-x-3"
+                      >
                         <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
                         <span className="text-gray-700">{feature}</span>
                       </li>
@@ -224,66 +264,12 @@ function NewArrivals() {
         </section>
       ))}
 
-      {/* Features Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-5 md:px-16">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Why Choose Our New Arrivals?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our latest collection represents the pinnacle of uniform innovation and design excellence
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: "🚀",
-                title: "Latest Technology",
-                description: "Featuring cutting-edge fabric innovations and smart design elements"
-              },
-              {
-                icon: "🌿",
-                title: "Sustainable Materials",
-                description: "Eco-friendly options made from recycled and sustainable materials"
-              },
-              {
-                icon: "⚡",
-                title: "Enhanced Performance",
-                description: "Superior comfort, durability, and functionality for demanding work environments"
-              },
-              {
-                icon: "🎨",
-                title: "Modern Design",
-                description: "Contemporary styling that reflects current fashion trends and professional standards"
-              },
-              {
-                icon: "🔧",
-                title: "Customizable Options",
-                description: "Flexible customization options to match your brand and requirements"
-              },
-              {
-                icon: "📦",
-                title: "Quick Delivery",
-                description: "Fast turnaround times for new arrival items with priority manufacturing"
-              }
-            ].map((feature, index) => (
-              <div key={index} className="text-center p-6 bg-white rounded-lg shadow-lg">
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section 
+      <section
         className="py-20 text-white text-center"
         style={{
-          background: 'linear-gradient(to bottom right, #2a314b, #1f2538, #1a1f2e)'
+          background:
+            "linear-gradient(to bottom right, #2a314b, #1f2538, #1a1f2e)",
         }}
       >
         <div className="max-w-4xl mx-auto px-6">
@@ -291,15 +277,17 @@ function NewArrivals() {
             Be First to Experience Innovation
           </h2>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-            Don't miss out on our latest uniform innovations. Contact us today to learn more about our new arrivals and secure your order for the newest in professional uniform technology.
+            Don't miss out on our latest uniform innovations. Contact us today to
+            learn more about our new arrivals and secure your order for the newest
+            in professional uniform technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/#ContactUs" onClick={(e) => handleLinkClick(e, 'ContactUs')}>
+            <Link href="/#ContactUs" onClick={(e) => handleLinkClick(e, "ContactUs")}>
               <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                 Order Now
               </button>
             </Link>
-            <Link href="/#ContactUs" onClick={(e) => handleLinkClick(e, 'ContactUs')}>
+            <Link href="/#ContactUs" onClick={(e) => handleLinkClick(e, "ContactUs")}>
               <button className="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                 Learn More
               </button>

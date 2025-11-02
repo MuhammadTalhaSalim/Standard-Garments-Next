@@ -2,8 +2,9 @@
 "[project]/src/Components/Navbar.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// "use client";
 // import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+// import Link from "next/link";
 // function Navbar() {
 //   const [isMenuOpen, setIsMenuOpen] = useState(false);
 //   const toggleMenu = () => {
@@ -12,12 +13,24 @@
 //   const closeMenu = () => {
 //     setIsMenuOpen(false);
 //   };
+//   const handleLinkClick = (e, sectionId) => {
+//     e.preventDefault();
+//     closeMenu();
+//     const element = document.getElementById(sectionId);
+//     if (element) {
+//       element.scrollIntoView({ behavior: 'smooth' });
+//     }
+//   };
 //   return (
 //     <nav className="bg-[#2a314b] h-16 flex items-center sticky top-0 z-50 shadow-lg">
 //       <div className="flex justify-between items-center w-full max-w-7xl mx-auto px-6">
 //         {/* Logo Section */}
 //         <div className="text-white text-2xl md:text-4xl font-bold">
-//           <Link to="/#Home" className="block py-4">
+//           <Link 
+//             href="/#Home" 
+//             className="block py-4"
+//             onClick={(e) => handleLinkClick(e, 'Home')}
+//           >
 //             Standard Garments
 //           </Link>
 //         </div>
@@ -54,7 +67,8 @@
 //         <ul className="hidden md:flex items-center h-16">
 //           <li className="h-16 flex items-center">
 //             <Link
-//               to="/#Home"
+//               href="/#Home"
+//               onClick={(e) => handleLinkClick(e, 'Home')}
 //               className="flex items-center h-16 px-6 text-xl font-medium bg-yellow-400 hover:text-black transition-all duration-300"
 //             >
 //               Home
@@ -62,7 +76,8 @@
 //           </li>
 //           <li className="h-16 flex items-center">
 //             <Link
-//               to="/#AboutUs"
+//               href="/#AboutUs"
+//               onClick={(e) => handleLinkClick(e, 'AboutUs')}
 //               className="flex items-center h-16 px-6 text-white text-xl font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300"
 //             >
 //               About Us
@@ -70,7 +85,8 @@
 //           </li>
 //           <li className="h-16 flex items-center">
 //             <Link
-//               to="/#Services"
+//               href="/#Services"
+//               onClick={(e) => handleLinkClick(e, 'Services')}
 //               className="flex items-center h-16 px-6 text-white text-xl font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300"
 //             >
 //               Services
@@ -78,7 +94,8 @@
 //           </li>
 //           <li className="h-16 flex items-center">
 //             <Link
-//               to="/#ContactUs"
+//               href="/#ContactUs"
+//               onClick={(e) => handleLinkClick(e, 'ContactUs')}
 //               className="flex items-center h-16 px-6 text-white text-xl font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300"
 //             >
 //               Contact Us
@@ -97,8 +114,8 @@
 //         <ul className="flex flex-col">
 //           <li>
 //             <Link
-//               to="/#Home"
-//               onClick={closeMenu}
+//               href="/#Home"
+//               onClick={(e) => handleLinkClick(e, 'Home')}
 //               className="block px-6 py-4 text-white text-lg font-medium bg-yellow-400 text-black hover:bg-yellow-500 transition-all duration-300"
 //             >
 //               Home
@@ -106,8 +123,8 @@
 //           </li>
 //           <li>
 //             <Link
-//               to="/#AboutUs"
-//               onClick={closeMenu}
+//               href="/#AboutUs"
+//               onClick={(e) => handleLinkClick(e, 'AboutUs')}
 //               className="block px-6 py-4 text-white text-lg font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300 border-t border-gray-600"
 //             >
 //               About Us
@@ -115,8 +132,8 @@
 //           </li>
 //           <li>
 //             <Link
-//               to="/#Services"
-//               onClick={closeMenu}
+//               href="/#Services"
+//               onClick={(e) => handleLinkClick(e, 'Services')}
 //               className="block px-6 py-4 text-white text-lg font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300 border-t border-gray-600"
 //             >
 //               Services
@@ -124,8 +141,8 @@
 //           </li>
 //           <li>
 //             <Link
-//               to="/#ContactUs"
-//               onClick={closeMenu}
+//               href="/#ContactUs"
+//               onClick={(e) => handleLinkClick(e, 'ContactUs')}
 //               className="block px-6 py-4 text-white text-lg font-medium hover:bg-yellow-400 hover:text-black transition-all duration-300 border-t border-gray-600"
 //             >
 //               Contact Us
@@ -144,14 +161,18 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
+;
 function Navbar() {
     _s();
     const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const toggleMenu = ()=>{
         setIsMenuOpen(!isMenuOpen);
     };
@@ -161,11 +182,27 @@ function Navbar() {
     const handleLinkClick = (e, sectionId)=>{
         e.preventDefault();
         closeMenu();
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({
-                behavior: 'smooth'
-            });
+        // Check if we're already on the home page
+        if (pathname === '/') {
+            // If on home page, just scroll to section
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        } else {
+            // If on another page, navigate to home first, then scroll
+            router.push('/');
+            // Wait for navigation to complete before scrolling
+            setTimeout(()=>{
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }, 300);
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -183,12 +220,12 @@ function Navbar() {
                             children: "Standard Garments"
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar.jsx",
-                            lineNumber: 177,
+                            lineNumber: 213,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Navbar.jsx",
-                        lineNumber: 176,
+                        lineNumber: 212,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -207,7 +244,7 @@ function Navbar() {
                                 d: "M6 18L18 6M6 6l12 12"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 199,
+                                lineNumber: 235,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                 strokeLinecap: "round",
@@ -216,17 +253,17 @@ function Navbar() {
                                 d: "M4 6h16M4 12h16M4 18h16"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 206,
+                                lineNumber: 242,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar.jsx",
-                            lineNumber: 192,
+                            lineNumber: 228,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Navbar.jsx",
-                        lineNumber: 187,
+                        lineNumber: 223,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -241,12 +278,12 @@ function Navbar() {
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar.jsx",
-                                    lineNumber: 219,
+                                    lineNumber: 255,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 218,
+                                lineNumber: 254,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -258,12 +295,12 @@ function Navbar() {
                                     children: "About Us"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar.jsx",
-                                    lineNumber: 228,
+                                    lineNumber: 264,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 227,
+                                lineNumber: 263,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -275,12 +312,12 @@ function Navbar() {
                                     children: "Services"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar.jsx",
-                                    lineNumber: 237,
+                                    lineNumber: 273,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 236,
+                                lineNumber: 272,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -292,24 +329,24 @@ function Navbar() {
                                     children: "Contact Us"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar.jsx",
-                                    lineNumber: 246,
+                                    lineNumber: 282,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 245,
+                                lineNumber: 281,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/Components/Navbar.jsx",
-                        lineNumber: 217,
+                        lineNumber: 253,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/Components/Navbar.jsx",
-                lineNumber: 174,
+                lineNumber: 210,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -325,12 +362,12 @@ function Navbar() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 267,
+                                lineNumber: 303,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar.jsx",
-                            lineNumber: 266,
+                            lineNumber: 302,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -341,12 +378,12 @@ function Navbar() {
                                 children: "About Us"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 276,
+                                lineNumber: 312,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar.jsx",
-                            lineNumber: 275,
+                            lineNumber: 311,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -357,12 +394,12 @@ function Navbar() {
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 285,
+                                lineNumber: 321,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar.jsx",
-                            lineNumber: 284,
+                            lineNumber: 320,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -373,33 +410,38 @@ function Navbar() {
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar.jsx",
-                                lineNumber: 294,
+                                lineNumber: 330,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar.jsx",
-                            lineNumber: 293,
+                            lineNumber: 329,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/Components/Navbar.jsx",
-                    lineNumber: 265,
+                    lineNumber: 301,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/Components/Navbar.jsx",
-                lineNumber: 258,
+                lineNumber: 294,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/Components/Navbar.jsx",
-        lineNumber: 173,
+        lineNumber: 209,
         columnNumber: 5
     }, this);
 }
-_s(Navbar, "vK10R+uCyHfZ4DZVnxbYkMWJB8g=");
+_s(Navbar, "lxk37GOVE+dkUBhasFrN/mzPvsg=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
+    ];
+});
 _c = Navbar;
 const __TURBOPACK__default__export__ = Navbar;
 var _c;
@@ -411,53 +453,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/Components/Navbar1.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import React from 'react';
-// import { IoCall } from "react-icons/io5";
-// import { MdOutlineMail } from "react-icons/md";
-// import { IoLocationSharp } from "react-icons/io5";
-// import { FaFacebookF } from "react-icons/fa";
-// import { AiFillInstagram } from "react-icons/ai";
-// import { IoLogoWhatsapp } from "react-icons/io";
-// function Navbar1() {
-//   return (
-//     <nav className="nav-1 bg-slate-200 p-2 text-sm hidden md:block ">
-//       <ul className="flex justify-between items-center px-1">
-//         <div className="contact">
-//           <li className="flex items-center gap-1">
-//             <IoCall />
-//             <a href="tel:+923224044443">+92322-4044443</a>
-//           </li>
-//           <li className="flex items-center gap-1">
-//             <MdOutlineMail />
-//             <a href="mailto:m.hashimali@gmail.com">m.hashimali@gmail.com</a>
-//           </li>
-//         </div>
-//         <div className="social flex items-center gap-4 text-xl">
-//           <li className="p-1 border border-transparent rounded-4xl hover:bg-yellow-400 group transition">
-//             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-//               <FaFacebookF className="text-[#2a314b] group-hover:text-white transition text-2xl" />
-//             </a>
-//           </li>
-//           <li className="p-1 border border-transparent rounded-4xl hover:bg-yellow-400 group transition">
-//             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-//               <AiFillInstagram className="text-[#2a314b] group-hover:text-white transition text-2xl" />
-//             </a>
-//           </li>
-//           <li className="p-1 border border-transparent rounded-4xl hover:bg-yellow-400 group transition">
-//             <a href="https://wa.me/923224044443" target="_blank" rel="noopener noreferrer">
-//               <IoLogoWhatsapp className="text-[#2a314b] group-hover:text-white transition text-2xl" />
-//             </a>
-//           </li>
-//         </div>
-//         <li className="flex items-center gap-1">
-//           <IoLocationSharp />
-//           <span>Amir Town, near The Trust School</span>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// }
-// export default Navbar1;
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -491,7 +486,7 @@ function Navbar1() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoCall"], {}, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 70,
+                                    lineNumber: 17,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -499,13 +494,13 @@ function Navbar1() {
                                     children: "+92322-4044443"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 18,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 69,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -513,7 +508,7 @@ function Navbar1() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MdOutlineMail"], {}, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 74,
+                                    lineNumber: 21,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -521,19 +516,19 @@ function Navbar1() {
                                     children: "m.hashimali@gmail.com"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 22,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 73,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/Components/Navbar1.jsx",
-                    lineNumber: 68,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -549,17 +544,17 @@ function Navbar1() {
                                     className: "text-[#2a314b] group-hover:text-white transition text-2xl"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 82,
+                                    lineNumber: 29,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar1.jsx",
-                                lineNumber: 81,
+                                lineNumber: 28,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 80,
+                            lineNumber: 27,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -572,17 +567,17 @@ function Navbar1() {
                                     className: "text-[#2a314b] group-hover:text-white transition text-2xl"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 34,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar1.jsx",
-                                lineNumber: 86,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 85,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -595,23 +590,23 @@ function Navbar1() {
                                     className: "text-[#2a314b] group-hover:text-white transition text-2xl"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Navbar1.jsx",
-                                    lineNumber: 92,
+                                    lineNumber: 39,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Navbar1.jsx",
-                                lineNumber: 91,
+                                lineNumber: 38,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 90,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/Components/Navbar1.jsx",
-                    lineNumber: 79,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -619,31 +614,31 @@ function Navbar1() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoLocationSharp"], {}, void 0, false, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 98,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             children: "Amir Town, near The Trust School"
                         }, void 0, false, {
                             fileName: "[project]/src/Components/Navbar1.jsx",
-                            lineNumber: 99,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/Components/Navbar1.jsx",
-                    lineNumber: 97,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/Components/Navbar1.jsx",
-            lineNumber: 66,
+            lineNumber: 13,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/Components/Navbar1.jsx",
-        lineNumber: 65,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 }
@@ -1565,200 +1560,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/Components/Services.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import React from "react";
-// import { Link } from "react-router-dom";
-// function Services() {
-//   return (
-//     <div className="bg-white py-10 px-5 md:px-16">
-//       {/* Header Section */}
-//       <div className="bg-gray-100 p-4 rounded-md shadow-md flex flex-col items-center justify-center mb-8">
-//         <div className="flex items-center justify-center mb-4">
-//           <div className="h-0.5 bg-black w-8 md:w-24 mr-2 md:mr-4"></div>
-//           <h2 className="text-xl md:text-5xl font-bold text-black text-center px-2">
-//             OUR SERVICES
-//           </h2>
-//           <div className="h-0.5 bg-black w-8 md:w-24 ml-2 md:ml-4"></div>
-//         </div>
-//         <p className="text-center mt-2 text-sm md:text-base px-4">
-//           At Standard Garments, we specialize in providing high-quality uniforms
-//           and teamwear tailored to your brand and purpose. Our services combine
-//           professional design, durable materials, and perfect fitting to ensure
-//           your teams look sharp and feel confident.
-//         </p>
-//       </div>
-//       {/* Services Grid */}
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-//         {/* Custom Uniform */}
-//         <Link to="/CustomUniform" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://5.imimg.com/data5/SELLER/Default/2020/11/MA/NR/CB/46371906/factory-worker-uniform.jpg"
-//               alt="Custom Uniform"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center">
-//               <h2 className="text-base md:text-lg font-semibold mb-2">
-//                 Custom Uniform Delivered To Your Door Step
-//               </h2>
-//               <p className="text-xs md:text-sm mb-4 hidden md:block">
-//                 We manufacture and supply premium quality uniforms. Proudly
-//                 customized here in the UAE.
-//               </p>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* Winter Wear */}
-//         <Link to="/WinterWear" className="group">
-//           <div className="relative rounded-md overflow-hidden group bg-black text-white h-80 md:h-96">
-//             <img
-//               src="https://media.gq.com/photos/676598892ab7540c29ee81f6/master/w_1600,c_limit/winteressentialslede1220.png"
-//               alt="Winter Wear"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 Winter Wear
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* Corporate Gifts */}
-//         <Link to="/CorporateGifts" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://unboxme.com/cdn/shop/files/Unboxme_Curated_Gift_Boxes_Mindful_Moments.png?v=1746581769"
-//               alt="Corporate Gifts"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 Corporate Gifts
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* Polo & T-Shirts */}
-//         <Link to="/PoloAndTShirts" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://img.joomcdn.net/4e29474e9eb6ed4b21237b9b00956fc9369f9611_original.jpeg"
-//               alt="Polo & T-Shirts"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 POLO and T-Shirts
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* Prints & Fabrics */}
-//         <Link to="/PrintsAndFabrics" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://www.cartexitalia.com/wp-content/uploads/2021/04/varianti-tessuto-stampato-fiori-1024x768.jpg"
-//               alt="Prints & Fabrics"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 Prints & Fabrics
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* Hospitality uniforms */}
-//         <Link to="/HospitalityUniforms" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://4.imimg.com/data4/OV/LL/ANDROID-66313268/product-500x500.jpeg"
-//               alt="Hospitality Uniforms"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 Hospitality Uniforms
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* hospital Uniforms */}
-//         <Link to="/HealthCare" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://cdn.dotpe.in/longtail/store-items/8101380/etxEG6M2.jpeg"
-//               alt="Hospital Uniforms"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 Health Care Uniforms
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* school Uniforms */}
-//         <Link to="/EducationUniforms" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://5.imimg.com/data5/SELLER/Default/2024/1/376790103/YO/GN/KB/63146359/boys-school-uniforms-500x500.png"
-//               alt="school Uniforms"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 Education Uniforms
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//         {/* New Arrivals */}
-//         <Link to="/NewArrivals" className="group">
-//           <div className="relative bg-black text-white rounded-md overflow-hidden group h-80 md:h-96">
-//             <img
-//               src="https://sweetsoutherncharmva.com/cdn/shop/collections/new_arrivals_1024x1024.png?v=1591296427"
-//               alt="New Arrivals"
-//               className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
-//             />
-//             <div className="absolute inset-0 flex flex-col justify-center items-center">
-//               <h2 className="text-base md:text-xl font-bold text-white mb-4">
-//                 New Arrivals
-//               </h2>
-//               <button className="bg-yellow-500 text-black px-3 md:px-4 py-1 md:py-2 rounded hover:bg-yellow-600 text-xs md:text-sm">
-//                 Read more
-//               </button>
-//             </div>
-//           </div>
-//         </Link>
-//       </div>
-//     </div>
-//   );
-// }
-// export default Services;
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -1784,7 +1585,7 @@ function Services() {
                                 className: "h-0.5 bg-black w-8 md:w-24 mr-2 md:mr-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Services.jsx",
-                                lineNumber: 225,
+                                lineNumber: 15,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1792,20 +1593,20 @@ function Services() {
                                 children: "OUR SERVICES"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Services.jsx",
-                                lineNumber: 226,
+                                lineNumber: 16,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "h-0.5 bg-black w-8 md:w-24 ml-2 md:ml-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/Services.jsx",
-                                lineNumber: 229,
+                                lineNumber: 19,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 224,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1813,13 +1614,13 @@ function Services() {
                         children: "At Standard Garments, we specialize in providing high-quality uniforms and teamwear tailored to your brand and purpose. Our services combine professional design, durable materials, and perfect fitting to ensure your teams look sharp and feel confident."
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 232,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/Components/Services.jsx",
-                lineNumber: 223,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1837,7 +1638,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 246,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1848,7 +1649,7 @@ function Services() {
                                             children: "Custom Uniform Delivered To Your Door Step"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 252,
+                                            lineNumber: 42,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1856,7 +1657,7 @@ function Services() {
                                             children: "We manufacture and supply premium quality uniforms. Proudly customized here in the UAE."
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 255,
+                                            lineNumber: 45,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1864,24 +1665,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 259,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 251,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 245,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 244,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1896,7 +1697,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 269,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1907,7 +1708,7 @@ function Services() {
                                             children: "Winter Wear"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 275,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1915,24 +1716,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 278,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 274,
+                                    lineNumber: 64,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 268,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 267,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1947,7 +1748,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 288,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1958,7 +1759,7 @@ function Services() {
                                             children: "Corporate Gifts"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 294,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1966,24 +1767,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 297,
+                                            lineNumber: 87,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 293,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 287,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 286,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1998,7 +1799,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 307,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2009,7 +1810,7 @@ function Services() {
                                             children: "POLO and T-Shirts"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 313,
+                                            lineNumber: 103,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2017,24 +1818,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 316,
+                                            lineNumber: 106,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 312,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 306,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 305,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2049,7 +1850,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 326,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2060,7 +1861,7 @@ function Services() {
                                             children: "Prints & Fabrics"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 332,
+                                            lineNumber: 122,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2068,24 +1869,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 335,
+                                            lineNumber: 125,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 331,
+                                    lineNumber: 121,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 325,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 324,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2100,7 +1901,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 345,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2111,7 +1912,7 @@ function Services() {
                                             children: "Hospitality Uniforms"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 351,
+                                            lineNumber: 141,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2119,24 +1920,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 354,
+                                            lineNumber: 144,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 350,
+                                    lineNumber: 140,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 344,
+                            lineNumber: 134,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 343,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2151,7 +1952,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 364,
+                                    lineNumber: 154,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2162,7 +1963,7 @@ function Services() {
                                             children: "Health Care Uniforms"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 370,
+                                            lineNumber: 160,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2170,24 +1971,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 373,
+                                            lineNumber: 163,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 369,
+                                    lineNumber: 159,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 363,
+                            lineNumber: 153,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 362,
+                        lineNumber: 152,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2202,7 +2003,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 383,
+                                    lineNumber: 173,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2213,7 +2014,7 @@ function Services() {
                                             children: "Education Uniforms"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 389,
+                                            lineNumber: 179,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2221,24 +2022,24 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 392,
+                                            lineNumber: 182,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 388,
+                                    lineNumber: 178,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 382,
+                            lineNumber: 172,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 381,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2253,7 +2054,7 @@ function Services() {
                                     className: "w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 402,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2264,7 +2065,7 @@ function Services() {
                                             children: "New Arrivals"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 408,
+                                            lineNumber: 198,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2272,36 +2073,36 @@ function Services() {
                                             children: "Read more"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/Services.jsx",
-                                            lineNumber: 411,
+                                            lineNumber: 201,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/Services.jsx",
-                                    lineNumber: 407,
+                                    lineNumber: 197,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/Services.jsx",
-                            lineNumber: 401,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/Components/Services.jsx",
-                        lineNumber: 400,
+                        lineNumber: 190,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/Components/Services.jsx",
-                lineNumber: 241,
+                lineNumber: 31,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/Components/Services.jsx",
-        lineNumber: 221,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -2316,119 +2117,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/Components/ContactUs.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import React, { useState } from 'react';
-// function ContactUs() {
-//   const [selectedUniforms, setSelectedUniforms] = useState([]);
-//   const uniformTypes = [
-//     'Corporate Uniforms',
-//     'Medical Scrubs',
-//     'Security Uniforms',
-//     'Restaurant Uniforms',
-//     'School Uniforms',
-//     'Hotel Staff Uniforms'
-//   ];
-//   const handleUniformChange = (uniform) => {
-//     setSelectedUniforms(prev => 
-//       prev.includes(uniform) 
-//         ? prev.filter(item => item !== uniform)
-//         : [...prev, uniform]
-//     );
-//   };
-//   return (
-//     <section className="text-white body-font relative" style={{background: 'linear-gradient(to bottom right, #2a314b, #1f2538, #1a1f2e)'}}>
-//       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-//         <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" 
-//              style={{backgroundColor: 'rgba(255, 255, 255, 0.1)'}}>
-//           <img
-//             src="https://media.istockphoto.com/id/815166664/photo/closeup-view-of-female-hands-touching-smartphone-white-blank-screen-horizontal-blurred.jpg?s=612x612&w=0&k=20&c=TOGuL3_GlxgWzi-EPP4Yvhmh5keFWcLZn0WvY0egV0M="
-//             alt="Map location"
-//             className="absolute inset-0 w-full h-full object-cover opacity-20"
-//           />
-//           <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md z-10">
-//             <div className="lg:w-1/2 px-6">
-//               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-//               <p className="mt-1 text-black">
-//                 Lahore, Pakistan
-//                 <br />
-//                 Amir town near the The Trust School
-//               </p>
-//             </div>
-//             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-//               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-//               <a className="text-indigo-500 leading-relaxed" href="mailto:info@standardgarments.com">
-//                 info@standardgarments.com
-//               </a>
-//               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-//               <p className="leading-relaxed text-black">+92322-4044443</p>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="lg:w-1/2 md:w-1/2 bg-white/10 backdrop-blur-sm flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 rounded-lg p-6">
-//           <h2 className="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
-//           <p className="leading-relaxed mb-5 text-gray-300">
-//             Tell us about your uniform requirements
-//           </p>
-//           {/* Uniform Type Selection */}
-//           <div className="relative mb-4">
-//             <label className="leading-7 text-sm text-yellow-400 block mb-2">Which type of uniforms do you need?</label>
-//             <div className="grid grid-cols-2 gap-2">
-//               {uniformTypes.map((uniform) => (
-//                 <label key={uniform} className="flex items-center cursor-pointer text-xs">
-//                   <input
-//                     type="checkbox"
-//                     className="form-checkbox h-3 w-3 text-yellow-400 rounded mr-2"
-//                     checked={selectedUniforms.includes(uniform)}
-//                     onChange={() => handleUniformChange(uniform)}
-//                   />
-//                   <span className="text-gray-300">{uniform}</span>
-//                 </label>
-//               ))}
-//             </div>
-//           </div>
-//           <div className="relative mb-4">
-//             <label htmlFor="name" className="leading-7 text-sm text-yellow-400">Name</label>
-//             <input
-//               type="text"
-//               id="name"
-//               name="name"
-//               className="w-full bg-white/20 rounded border border-gray-400 focus:border-yellow-400 focus:ring-2 
-//                          focus:ring-yellow-400/50 text-base outline-none text-white py-1 px-3 leading-8 
-//                          transition-colors duration-200 ease-in-out"
-//             />
-//           </div>
-//           <div className="relative mb-4">
-//             <label htmlFor="email" className="leading-7 text-sm text-yellow-400">Email</label>
-//             <input
-//               type="email"
-//               id="email"
-//               name="email"
-//               className="w-full bg-white/20 rounded border border-gray-400 focus:border-yellow-400 focus:ring-2 
-//                          focus:ring-yellow-400/50 text-base outline-none text-white py-1 px-3 leading-8 
-//                          transition-colors duration-200 ease-in-out"
-//             />
-//           </div>
-//           <div className="relative mb-4">
-//             <label htmlFor="message" className="leading-7 text-sm text-yellow-400">Message</label>
-//             <textarea
-//               id="message"
-//               name="message"
-//               className="w-full bg-white/20 rounded border border-gray-400 focus:border-yellow-400 focus:ring-2 
-//                          focus:ring-yellow-400/50 h-32 text-base outline-none text-white py-1 px-3 resize-none 
-//                          leading-6 transition-colors duration-200 ease-in-out"
-//             ></textarea>
-//           </div>
-//           <button className="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg transition-colors">
-//             Submit
-//           </button>
-//           <p className="text-xs text-gray-400 mt-3">
-//             We'll get back to you within 24 hours with a detailed quote.
-//           </p>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-// export default ContactUs;
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -2475,7 +2163,7 @@ function ContactUs() {
                             className: "absolute inset-0 w-full h-full object-cover opacity-20"
                         }, void 0, false, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 149,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2489,7 +2177,7 @@ function ContactUs() {
                                             children: "ADDRESS"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 156,
+                                            lineNumber: 36,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2498,20 +2186,20 @@ function ContactUs() {
                                                 "Lahore, Pakistan",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 39,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Amir town near the The Trust School"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 157,
+                                            lineNumber: 37,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 155,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2522,7 +2210,7 @@ function ContactUs() {
                                             children: "EMAIL"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 164,
+                                            lineNumber: 44,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2531,7 +2219,7 @@ function ContactUs() {
                                             children: "info@standardgarments.com"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 165,
+                                            lineNumber: 45,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2539,7 +2227,7 @@ function ContactUs() {
                                             children: "PHONE"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 168,
+                                            lineNumber: 48,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2547,25 +2235,25 @@ function ContactUs() {
                                             children: "+92322-4044443"
                                         }, void 0, false, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 169,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 163,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 154,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/Components/ContactUs.jsx",
-                    lineNumber: 147,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2576,7 +2264,7 @@ function ContactUs() {
                             children: "Feedback"
                         }, void 0, false, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 175,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2584,7 +2272,7 @@ function ContactUs() {
                             children: "Tell us about your uniform requirements"
                         }, void 0, false, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 176,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2595,7 +2283,7 @@ function ContactUs() {
                                     children: "Which type of uniforms do you need?"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 182,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2610,7 +2298,7 @@ function ContactUs() {
                                                     onChange: ()=>handleUniformChange(uniform)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 66,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2618,24 +2306,24 @@ function ContactUs() {
                                                     children: uniform
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 72,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, uniform, true, {
                                             fileName: "[project]/src/Components/ContactUs.jsx",
-                                            lineNumber: 185,
+                                            lineNumber: 65,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 183,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 181,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2647,7 +2335,7 @@ function ContactUs() {
                                     children: "Name"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 199,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2657,13 +2345,13 @@ function ContactUs() {
                                     className: "w-full bg-white/20 rounded border border-gray-400 focus:border-yellow-400 focus:ring-2    focus:ring-yellow-400/50 text-base outline-none text-white py-1 px-3 leading-8    transition-colors duration-200 ease-in-out"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 200,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 198,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2675,7 +2363,7 @@ function ContactUs() {
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 210,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2685,13 +2373,13 @@ function ContactUs() {
                                     className: "w-full bg-white/20 rounded border border-gray-400 focus:border-yellow-400 focus:ring-2    focus:ring-yellow-400/50 text-base outline-none text-white py-1 px-3 leading-8    transition-colors duration-200 ease-in-out"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 211,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 209,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2703,7 +2391,7 @@ function ContactUs() {
                                     children: "Message"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 221,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -2712,13 +2400,13 @@ function ContactUs() {
                                     className: "w-full bg-white/20 rounded border border-gray-400 focus:border-yellow-400 focus:ring-2    focus:ring-yellow-400/50 h-32 text-base outline-none text-white py-1 px-3 resize-none    leading-6 transition-colors duration-200 ease-in-out"
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/ContactUs.jsx",
-                                    lineNumber: 222,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 220,
+                            lineNumber: 100,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2726,7 +2414,7 @@ function ContactUs() {
                             children: "Submit"
                         }, void 0, false, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 230,
+                            lineNumber: 110,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2734,24 +2422,24 @@ function ContactUs() {
                             children: "We'll get back to you within 24 hours with a detailed quote."
                         }, void 0, false, {
                             fileName: "[project]/src/Components/ContactUs.jsx",
-                            lineNumber: 233,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/Components/ContactUs.jsx",
-                    lineNumber: 174,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/Components/ContactUs.jsx",
-            lineNumber: 146,
+            lineNumber: 26,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/Components/ContactUs.jsx",
-        lineNumber: 145,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
@@ -3042,86 +2730,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/Components/YourBrandMatters.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import React from 'react'
-// import { Link } from 'react-router-dom';
-// function YourBrandMatters() {
-//   const customClipStyleDesktop = {
-//     clipPath: 'polygon(0px 1%, 97% 0px, 87% 100%, 0% 100%)',
-//     backgroundColor: '#2a314b',
-//     color: 'white',
-//     padding: '20px',
-//     maxWidth: '700px', 
-//     height: '600px',
-//     width:'70%'
-//   };
-//   const customClipStyleMobile = {
-//     backgroundColor: '#2a314b',
-//     color: 'white',
-//     padding: '20px',
-//     width: '100%',
-//     minHeight: '400px'
-//   };
-//   return (
-//     <div className='mb-20'>
-//       <h1 className='text-2xl md:text-4xl font-bold bg-yellow-400 text-white text-center mx-4 md:m-20 p-3 md:p-5'>
-//         Your Brand Matters
-//       </h1> 
-//       {/* Mobile Layout */}
-//       <div className='md:hidden px-4 mt-8'>
-//         <div className='customClip rounded-lg mb-8' style={customClipStyleMobile}>
-//           <p className='text-white text-2xl text-center mb-6 pt-8'>
-//             Your Brand <br />Matters.
-//           </p>
-//           <hr className="border-t border-white my-5 mx-8" />
-//           <div className="text-center">
-//             <Link to="/#CustomUniforms">
-//               <button className='bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 transition-all duration-300'>
-//                 Browse custom uniforms
-//               </button>
-//             </Link>
-//           </div>
-//         </div>
-//         <div className='textContainer'>
-//           <p className='text-black text-base text-justify mb-4'>
-//             At Standard Garments, we understand that your brand is your identity.
-//           </p>
-//           <p className='text-black text-base text-justify mb-4'>
-//             That's why we are committed to helping you build a strong brand presence through our high-quality uniforms and teamwear. Our uniforms are not just clothing; they are a reflection of your brand's values, professionalism, and attention to detail. With our custom designs, durable materials, and perfect fitting, we ensure that your team looks sharp and feels confident, making a positive impact on your customers.
-//           </p>
-//           <p className='text-black text-base text-justify mb-4'>
-//             Whether you're in the hospitality, healthcare, or corporate sector, we have the expertise to create uniforms that align with your brand's vision and mission. In today's competitive market, establishing a strong brand identity is crucial for success. Your brand is more than just a logo; it's the perception that customers have of your business, and we help you communicate that through professional, high-quality uniforms that represent your company's excellence.
-//           </p>
-//         </div>
-//       </div>
-//       {/* Desktop Layout */}
-//       <div className='TwoContainer mt-25 hidden md:flex'>
-//         <div className='customClip' style={customClipStyleDesktop}>
-//           <p className='text-white text-3xl lg:text-5xl text-center mt-16 lg:mt-25'>
-//             Your Brand <br />Matters.
-//           </p>
-//           <hr className="border-t border-white my-5 mx-12 lg:mx-20" />
-//           <div className="text-center">
-//             <button className='bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 transition-all duration-300'>
-//               Browse custom uniforms
-//             </button>
-//           </div>
-//         </div>
-//         <div className='textContainer flex flex-col justify-center items-center w-2/5 px-4'>
-//           <p className='text-black text-lg xl:text-xl text-justify mb-4'>
-//             At Standard Garments, we understand that your brand is your identity.
-//           </p>
-//           <p className='text-black text-lg xl:text-xl text-justify mb-4'>
-//             That's why we are committed to helping you build a strong brand presence through our high-quality uniforms and teamwear. Our uniforms are not just clothing; they are a reflection of your brand's values, professionalism, and attention to detail. With our custom designs, durable materials, and perfect fitting, we ensure that your team looks sharp and feels confident, making a positive impact on your customers.
-//           </p>
-//           <p className='text-black text-lg xl:text-xl text-justify mb-4'>
-//             Whether you're in the hospitality, healthcare, or corporate sector, we have the expertise to create uniforms that align with your brand's vision and mission. In today's competitive market, establishing a strong brand identity is crucial for success. Your brand is more than just a logo; it's the perception that customers have of your business, and we help you communicate that through professional, high-quality uniforms that represent your company's excellence.
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-// export default YourBrandMatters
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -3156,7 +2764,7 @@ function YourBrandMatters() {
                 children: "Your Brand Matters"
             }, void 0, false, {
                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                lineNumber: 118,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3172,21 +2780,21 @@ function YourBrandMatters() {
                                     "Your Brand ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                        lineNumber: 126,
+                                        lineNumber: 35,
                                         columnNumber: 24
                                     }, this),
                                     "Matters."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 125,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                                 className: "border-t border-white my-5 mx-8"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 128,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3198,23 +2806,23 @@ function YourBrandMatters() {
                                         children: "Browse custom uniforms"
                                     }, void 0, false, {
                                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                        lineNumber: 132,
+                                        lineNumber: 41,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                    lineNumber: 131,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 130,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                        lineNumber: 124,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3225,7 +2833,7 @@ function YourBrandMatters() {
                                 children: "At Standard Garments, we understand that your brand is your identity."
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 140,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3233,7 +2841,7 @@ function YourBrandMatters() {
                                 children: "That's why we are committed to helping you build a strong brand presence through our high-quality uniforms and teamwear."
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 143,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3241,19 +2849,19 @@ function YourBrandMatters() {
                                 children: "Whether you're in the hospitality, healthcare, or corporate sector, we create uniforms that align with your vision and mission."
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 146,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                        lineNumber: 139,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                lineNumber: 123,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3269,21 +2877,21 @@ function YourBrandMatters() {
                                     "Your Brand ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                        lineNumber: 156,
+                                        lineNumber: 65,
                                         columnNumber: 24
                                     }, this),
                                     "Matters."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 155,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                                 className: "border-t border-white my-5 mx-12 lg:mx-20"
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 158,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3295,23 +2903,23 @@ function YourBrandMatters() {
                                         children: "Browse custom uniforms"
                                     }, void 0, false, {
                                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                        lineNumber: 162,
+                                        lineNumber: 71,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                    lineNumber: 161,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 160,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                        lineNumber: 154,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3322,7 +2930,7 @@ function YourBrandMatters() {
                                 children: "At Standard Garments, we understand that your brand is your identity."
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 170,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3330,7 +2938,7 @@ function YourBrandMatters() {
                                 children: "Our uniforms reflect your brand's values and professionalism."
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 173,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3338,25 +2946,25 @@ function YourBrandMatters() {
                                 children: "We help you create an impactful presence in a competitive market."
                             }, void 0, false, {
                                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                                lineNumber: 176,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                        lineNumber: 169,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/Components/YourBrandMatters.jsx",
-                lineNumber: 153,
+                lineNumber: 62,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/Components/YourBrandMatters.jsx",
-        lineNumber: 117,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
@@ -3939,89 +3547,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/app/page.jsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// // // import React, { useEffect } from "react";
-// // // import { useLocation } from "react-router-dom";
-// // // import Navbar from "../Components/Navbar";
-// // // import Navbar1 from "../Components/Navbar1";
-// // // import Home from "../Components/Home";
-// // // import AboutUs from "../Components/AboutUs";
-// // // import Services from "../Components/Services";
-// // // import ContactUs from "../Components/ContactUs";
-// // // import Crousel from "../Components/Crousel";
-// // // import YourBrandMatters from "../Components/YourBrandMatters";
-// // // import Footer from "../Components/Footer";
-// // "use client";
-// // import React, { useEffect } from "react";
-// // import { useLocation } from "react-router-dom";
-// // import Navbar from "../Components/Navbar";
-// // import Navbar1 from "../Components/Navbar1";
-// // import Home from "../Components/Home";  
-// // import AboutUs from "../Components/AboutUs";
-// // import Services from "../Components/Services";
-// // import ContactUs from "../Components/ContactUs";
-// // import Crousel from "../Components/Crousel";
-// // import YourBrandMatters from "../Components/YourBrandMatters";
-// // import Footer from "../Components/Footer";
-// // export default function Page() {
-// //   const location = useLocation();
-// //     useEffect(() => {
-// //       // Check if there's a hash in the URL
-// //       if (location.hash) {
-// //         const sectionId = location.hash.substring(1); // Remove the #
-// //         const element = document.getElementById(sectionId);
-// //         if (element) {
-// //           // Small delay to ensure page is fully loaded
-// //           setTimeout(() => {
-// //             element.scrollIntoView({ behavior: 'smooth' });
-// //           }, 100);
-// //         }
-// //       }
-// //     }, [location]);
-// //   return  <div className="scroll-smooth">
-// //       <Navbar1 />
-// //       <Navbar />
-// //       <section id="Home">
-// //         <Home />
-// //       </section>
-// //       <section id="AboutUs">
-// //         <AboutUs />
-// //       </section>
-// //       <section id="Services">
-// //         <Services />
-// //       </section>
-// //       <YourBrandMatters />
-// //       <Crousel />
-// //       <section id="ContactUs">
-// //         <ContactUs />
-// //       </section>
-// //       <Footer/>
-// //     </div>
-// // }
-// "use client";
-// import React, { useEffect } from "react";
-// import Link from "next/link";
-// import Navbar from "../Components/Navbar";
-// import Home from "../Components/Home";
-// import AboutUs from "../Components/AboutUs";
-// import Services from "../Components/Services";
-// import ContactUs from "../Components/ContactUs";
-// import Crousel from "../Components/Crousel";
-// import YourBrandMatters from "../Components/YourBrandMatters";
-// import Footer from "../Components/Footer";
-// export default function Page() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Home />
-//       <AboutUs />
-//       <Services />
-//       <ContactUs />
-//       <Crousel />
-//       <YourBrandMatters />
-//       <Footer />
-//     </>
-//   );
-// }
 __turbopack_context__.s([
     "default",
     ()=>Page
@@ -4084,81 +3609,81 @@ function Page() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$Navbar1$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 129,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$Navbar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 130,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 id: "Home",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$Home$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
-                    lineNumber: 132,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 131,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 id: "AboutUs",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$AboutUs$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
-                    lineNumber: 135,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 134,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 id: "Services",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$Services$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
-                    lineNumber: 138,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 137,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$YourBrandMatters$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 140,
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$Crousel$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 141,
+                lineNumber: 49,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 id: "ContactUs",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$ContactUs$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.jsx",
-                    lineNumber: 143,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 142,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$Components$2f$Footer$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.jsx",
-                lineNumber: 145,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/page.jsx",
-        lineNumber: 128,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }
